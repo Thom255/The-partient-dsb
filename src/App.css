@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+}
+
+.container {
+    width: 90%;
+    margin: 40px auto;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th {
+    background: #222;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.patient-row {
+    cursor: pointer;
+}
+
+.patient-row:hover {
+    background: #f1f1f1;
+}
+
+button {
+    padding: 10px 16px;
+    border: none;
+    background: #222;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.details-card {
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+.patient-form {
+    background: white;
+    padding: 20px;
+    width: 400px;
+    max-width: 100%;
+}
+
+.patient-form div {
+    margin-bottom: 15px;
+}
+
+.patient-form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.patient-form input,
+.patient-form select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.success {
+    margin-top: 20px;
+    padding: 12px;
+    background: #d4edda;
+    color: #155724;
+}
+
+.error {
+    margin-top: 20px;
+    padding: 12px;
+    background: #f8d7da;
+    color: #721c24;
+}
