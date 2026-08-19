@@ -24,19 +24,24 @@ function Patients() {
 
             console.log("PATIENT API RESPONSE:", response.data);
 
-            let data = response.data;
+            console.log(
+                "FIRST PATIENT:",
+                response.data.data.data[0]
+            );
 
-            // If API returns { data: [...] }
-            if (data && data.data) {
-                data = data.data;
-            }
+            console.log(
+                "FIRST PATIENT JSON:",
+                JSON.stringify(
+                    response.data.data.data[0],
+                    null,
+                    2
+                )
+            );
+            const patientsData =
+                response.data.data.data;
 
-            // Make sure data is an array
-            if (!Array.isArray(data)) {
-                data = [data];
-            }
+            setPatients(patientsData);
 
-            setPatients(data);
 
         } catch (err) {
             console.error("GET PATIENTS ERROR:", err);
